@@ -9,7 +9,7 @@ For this challenge we used a *Lego Mindstorm*, *Nvidia Jetson TX2* and a *PS3EYE
 
 2. Additional Ubuntu Packages
 * Chillytag
-We used a C++ library to generate easily recognizable tags.
+We used a C++ library to generate easily recognizable tags. [Tutorial https://github.com/pbecker93/PyChiliTagDetect].
 * qv4l2
 This application allows you to control the driver settings of the PS3EYE.
 * Mosquito
