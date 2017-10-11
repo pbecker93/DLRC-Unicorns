@@ -25,6 +25,7 @@ This path contains the class that has control over the camera. It runs in a sepe
 This class contains three different clustering algorithms, that can all be called in the */policy/detector.py* to determine the color of the lego bricks that are detected. 
 * *mean_cluster.py* clusters bricks by just taking the average of the pixels in the crop (after some image preprocessing). This is completetely unsupervised but showed to be very sensitive to different lighting conditions.
 * *shay_cluster.py* uses a histogram based knn-method to classify. The model was pretrained on a dataset we made ourselves. Unfortunately this method was not very robust but might improve if the dataset corresponded better to the experiment.
+* **
 #### *fcn*
 
 #### *mqtt_master*
