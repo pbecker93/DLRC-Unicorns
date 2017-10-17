@@ -37,7 +37,9 @@ The mosquitto client is used to communicate between the Jetson and ev3. We send 
 to the *slave.py* on the ev3. So the ev3 only acts as a receiver for motor commands.
 
 #### *policy*
-The first goal of the policy is to detect a brick by scanning, moving towards it (e.g. keeping it in a narrow corridor in the field of view while moving) and picking it up. Before we close the gripper we continuously scan for objects between the gripper and when a blob is detected that is large enough we create a crop and send it to the cluster algorithm. Now that we have a brick we need to bring it to a box. This is done by scanning again, and looking for the chillytag corresponding with the cluster id. When a box is detected we move towards it in a similar fashion as before. When we are close enough, we approach and drop the brick in the box. We then 
+The first goal of the policy is to detect a brick by scanning, moving towards it (e.g. keeping it in a narrow corridor in the field of view while moving) and picking it up. Before we close the gripper we continuously scan for objects between the gripper and when a blob is detected that is large enough we create a crop and send it to the cluster algorithm. Now that we have a brick we need to bring it to a box. This is done by scanning again, and looking for the chillytag corresponding with the cluster id. When a box is detected we move towards it in a similar fashion as before. When we are close enough, we approach and drop the brick in the box. We then turn around and start scanning for new bricks. Obstacle avoidance should be build in for both the brick and box part of the policy, but is still not very robust. This is mainly due to the obstacle detection from the vgg16 being quite noisy some times.
 
 #### *tracking*
+Tracking is done in simple way, we select the nearest brick and in the next frame find the marker closest to the old one.
+
 #### *vae_clustering*
