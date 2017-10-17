@@ -1,5 +1,5 @@
 ## DLRC for Volkswagen
-For this challenge we used a *Lego Mindstorm*, *Nvidia Jetson TX2* and a *PS3EYE* to sort *LEGO* bricks by color. We had to detect the bricks, pick them up and put them in the correct boxes.
+For this challenge we used a *Lego Mindstorm*, *Nvidia Jetson TX2* and a *PS3EYE* to sort *LEGO* bricks by color. We had to detect the bricks, pick them up and put them in the correct boxes. More info can be found on the [blog](http://dlrc.pages.argmax.ai/blog/).
 
 1. Python 3 Packages
 * scipy
