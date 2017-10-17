@@ -1,0 +1,11 @@
+# Settings for the broker
+
+#FREIMAN
+#BROKER_IP = "192.168.179.40"  
+
+#DLRC
+BROKER_IP = "10.250.144.181"
+#AUDI GUEST
+#BROKER_IP = "10.180.226.168"
+
+BROKER_PORT = 1883
